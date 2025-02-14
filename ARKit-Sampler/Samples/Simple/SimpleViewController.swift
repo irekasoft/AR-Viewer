@@ -28,7 +28,8 @@ class SimpleViewController: UIViewController {
     if let modelURL = modelURL {
       print("modelURL", modelURL)
       
-      sceneView.allowsCameraControl = true
+      // sceneView.allowsCameraControl = true
+
       do {
         let scene = try SCNScene(url: modelURL, options: nil)
         sceneView.scene = scene
